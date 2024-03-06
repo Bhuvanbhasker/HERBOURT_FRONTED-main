@@ -8,46 +8,95 @@
     <style>
         /* Add custom styles for signup page */
         body {
-            background-color: #f3f3f3;
+            background-color: #f0c3c3;
             font-family: Arial, sans-serif;
             background-image: url(https://media.istockphoto.com/id/1460258222/photo/abstract-urban-buildings.jpg?s=2048x2048&w=is&k=20&c=OTjbRgiJP2HqDtRPSgq0RAyyEWT1giyVZn7UuSg1skk=);
         }
         .container {
-            max-width: 400px;
+            max-width: 450px;
             margin: 0 auto;
             padding: 20px;
             background-color: transparent;
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        h2 {
+        .container h2 {
             text-align: center;
+            color: blue;
             -webkit-text-fill-color: #007bff;
+            text-decoration: underline;
         }
         label {
             display: block;
             margin-bottom: 10px;
         }
-        input[type="text"],
+        input[type="name"],
         input[type="email"],
         input[type="password"],
         button {
             width: 100%;
             padding: 10px;
             margin-bottom: 15px;
-            border: 1px solid #f1e8e8;
+            border: 1px solid #ddd2d2;
             border-radius: 4px;
             box-sizing: border-box;
         }
         button {
             background-color: #007bff;
-            color: #fff;
+            color: #d50808;
             font-size: 16px;
             cursor: pointer;
         }
         button:hover {
             background-color: #0056b3;
         }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .container {
+            /* ... */
+            animation: moveIn 1s; /* Add this line */
+        }
+        
+        /* Add the animation keyframes */
+        @keyframes moveIn {
+            from {
+                transform: translateX(-100%);
+            }
+            to {
+                transform: translateX(0%);
+            }
+        }
+        
+        .container input[type="name"],
+        .container input[type="email"],
+        .container input[type="password"] {
+    /* ... */
+         animation: scaleUp 0.1s; /* Add this line */
+         background-color: rgb(243, 243, 238); /* fill color */
+         border: 2px solid black;
+        }
+
+/* Add the animation keyframes */
+@keyframes scaleUp {
+    from {
+        transform: scale(0.9);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+.container button {
+    /* ... */
+    animation: rotate 1s linear infinite; /* Add this line */
+}
     </style>
 </head>
 <body>

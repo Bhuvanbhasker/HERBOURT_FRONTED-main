@@ -39,5 +39,19 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+function toggleChatbot() {
+    var chatbotContainer = document.getElementById("chatbot-container");
+    if (chatbotContainer.style.display === "none") {
+      chatbotContainer.style.display = "block";
+    } else {
+      chatbotContainer.style.display = "none";
+    }
+  }
+  
+
+
+
+
+
     
 
