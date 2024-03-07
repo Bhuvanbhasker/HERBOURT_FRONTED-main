@@ -60,35 +60,7 @@ document.addEventListener('DOMContentLoaded', function() {
   
 
 
-//   $(document).ready(function(){
-//     $('.your-carousel-class').slick({
-//       autoplay: true,
-//       autoplaySpeed: 2000, // Adjust this value to change the slide duration
-//       slidesToShow: 1,
-//       slidesToScroll: 1,
-//       arrows: false,
-//       dots: true,
-//       pauseOnHover: true,
-//       responsive: [
-//         {
-//           breakpoint: 767,
-//           settings: {
-//             slidesToShow: 1,
-//             slidesToScroll: 1,
-//             infinite: true,
-//             dots: true
-//           }
-//         },
-//         {
-//           breakpoint: 480,
-//           settings: {
-//             slidesToShow: 1,
-//             slidesToScroll: 1
-//           }
-//         }
-//       ]
-//     });
-//   });
+
 
 
 
