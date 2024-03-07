@@ -2,7 +2,8 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-image: url(https://images.pexels.com/photos/1939485/pexels-photo-1939485.jpeg?auto=compress&cs=tinysrgb&w=600);
+  /* background-image: url(https://images.pexels.com/photos/1939485/pexels-photo-1939485.jpeg?auto=compress&cs=tinysrgb&w=600); */
+  background-color: #0691ad;
 }
 
 .container {
@@ -12,7 +13,7 @@ body {
 }
 
 
-/* CSS for image to fit the screen */
+/* CSS for image to fit the screen for home */
 #home img  {
   width: 100vw;
    
@@ -21,11 +22,29 @@ body {
 }
 
 
+/* end of home */
+@media only screen and (max-width: 768px) {
+  header {
+    padding: 5px 0; /* Adjust padding for smaller screens */
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+}
+
+/* Define specific styles for larger screens using media queries */
+@media only screen and (min-width: 1200px) {
+  header {
+    padding: 20px 0; /* Adjust padding for larger screens */
+    font-size: 18px; /* Adjust font size for larger screens */
+  }
+}
+
 
 header {
   background-color: #0b61ca42;
   color: #7449d0;
   padding: 10px 0;
+  width: 100%;
+  height: auto;
 }
 
 header h1 {
@@ -45,6 +64,7 @@ nav ul {
   list-style: none;
   padding: 0;
   margin: 0;
+  top: 5rem;
 }
 
 nav ul li {
@@ -161,8 +181,8 @@ color: #0d0c0d;
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('https://media.istockphoto.com/id/1278783843/photo/a-question-mark-on-a-wooden-cube-on-a-computer-keyboard-with-a-blurred-background-and-shallow.webp?s=2048x2048&w=is&k=20&c=V3ZsMzy8kZ8Bw8oHvsXYGdejh-kVJmp2u_2QhJUmQss=');
-
+  /* background-image: url(https://images.pexels.com/photos/1131774/pexels-photo-1131774.jpeg?auto=compress&cs=tinysrgb&w=600); */
+  background-image: url(https://images.pexels.com/photos/1166644/pexels-photo-1166644.jpeg?auto=compress&cs=tinysrgb&w=600);
   background-size: cover;
   background-position: center;
   filter: blur(5px); /* Adjust the blur radius as needed */
@@ -735,7 +755,7 @@ outline: none;
     height: auto;
     padding: 20px;
     text-align: center;
-    background-image: url('https://media.istockphoto.com/id/1278783843/photo/a-question-mark-on-a-wooden-cube-on-a-computer-keyboard-with-a-blurred-background-and-shallow.webp?s=2048x2048&w=is&k=20&c=V3ZsMzy8kZ8Bw8oHvsXYGdejh-kVJmp2u_2QhJUmQss=');
+    background-image: appearance;
     background-size: cover;
     background-position: center;
   }
@@ -1199,7 +1219,7 @@ img {
 
 #gallery {
   padding: 50px 0;
-  background-color: blueviolet;
+  background-color: rgb(162, 135, 248);
 
   
 }
@@ -1252,7 +1272,6 @@ img {
   cursor: pointer;
 }
 
-
 /* Style the search container */
 .search-container {
   float: right;
@@ -1284,42 +1303,13 @@ img {
 }
 
 /* Responsive search container */
-@media (max-width: 600px) {
+@media (max-width: 50px) {
   .search-container {
     float: none;
     text-align: center;
+    min-width: 50px; 
   }
 }
-
-
-.chatbot-toggle {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 1000;
-  cursor: pointer;
-}
-
-.chatbot-circle {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-color: blue; /* Change color as needed */
-}
-
-.chatbot-container {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 999;
-  width: 300px;
-  height: 400px;
-  background-color: #f5f5f5;
-  border: 1px solid #cccccc;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
 
 
 .chatbot-toggle {
@@ -1349,3 +1339,26 @@ img {
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+@media (max-width: 767px) {
+  .chatbot-container {
+    width: 100%;
+    border-radius: 0;
+    height: 100%;
+  }
+}
+
+
+
+
+/* vvvvvvvvvvvvvvvvvvvvvv */
+
+
+@media (max-width: 767px) {
+  /* Other existing styles */
+
+  #nav-ul.show {
+    display: block;
+    min-width: 50px;
+  }
+}
+

@@ -47,8 +47,48 @@ function toggleChatbot() {
       chatbotContainer.style.display = "none";
     }
   }
+
+// vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+document.addEventListener('DOMContentLoaded', function() {
+    const menuIcon = document.querySelector('.menu-icon');
+    const navUl = document.querySelector('#nav-ul');
+  
+    menuIcon.addEventListener('click', function() {
+      navUl.classList.toggle('show');
+    });
+  });
   
 
+
+//   $(document).ready(function(){
+//     $('.your-carousel-class').slick({
+//       autoplay: true,
+//       autoplaySpeed: 2000, // Adjust this value to change the slide duration
+//       slidesToShow: 1,
+//       slidesToScroll: 1,
+//       arrows: false,
+//       dots: true,
+//       pauseOnHover: true,
+//       responsive: [
+//         {
+//           breakpoint: 767,
+//           settings: {
+//             slidesToShow: 1,
+//             slidesToScroll: 1,
+//             infinite: true,
+//             dots: true
+//           }
+//         },
+//         {
+//           breakpoint: 480,
+//           settings: {
+//             slidesToShow: 1,
+//             slidesToScroll: 1
+//           }
+//         }
+//       ]
+//     });
+//   });
 
 
 
