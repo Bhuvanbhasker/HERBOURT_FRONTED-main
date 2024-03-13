@@ -8,24 +8,67 @@
     <script src="script.js"></script>
 
     <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+    
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+    
+        
         #gallery {
             padding: 50px 0;
-            background-color: blueviolet;
+            background-color: rgb(203, 195, 209);
         }
         #gallery h2 {
-            color:blue;
+            color:rgb(239, 239, 248);
+            top: 50rem;
         }
 
         .gallery-container {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
             gap: 20px;
+            justify-content: center;
         }
 
         .gallery-item img {
             width: 100%;
             height: auto;
+            aspect-ratio: 5/2;
+            object-fit: contain;
+            
         }
+
+        
+    
+    .gallery-item {
+        opacity: 0; /* Set initial opacity to 0 */
+        animation: fadeUp 8.0s forwards; /* Apply fadeUp animation */
+        justify-content: center;
+    }
+
+        
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: scale(1);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1.5);
+            }
+        }
+
+         /* Media Query for mobile devices */
+         @media only screen and (max-width: 767px) {
+            .gallery-container {
+                grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+            }
+        }
+
         .lightbox {
             display: none;
             position: fixed;
@@ -44,7 +87,8 @@
             max-height: 90%;
             border: 4px solid #fff;
             box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
-        }
+            aspect-ratio: 3;
+        }  
 
         .close {
             position: absolute;
@@ -70,12 +114,12 @@
         nav ul li {
             margin-right: 20px;
         }
-        nav ul li:last-child {
+        nav ul li:last-chi/ld {
             margin-right: 0;
         }
         nav ul li a {
             text-decoration: none;
-            color: #1066de;
+            color: #e7ebef;
         }
     </style>
 </head>
@@ -98,7 +142,7 @@
         <h2>Gallery</h2>
         <div class="gallery-container">
             <div class="gallery-item">
-                <img src="photo1.webp" alt="Image 1">
+                <img src="photo1.webp"  alt="Image 1">
             </div>
             <div class="gallery-item">
                 <img src="photo2.jpg" alt="Image 2">

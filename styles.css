@@ -104,7 +104,7 @@ section {
   
 section h2 {
   margin-top: 0;
-  -webkit-text-fill-color: #cdc9b7;
+  -webkit-text-fill-color: #4a84e9;
   font-weight: 900;
 }
 
@@ -118,11 +118,11 @@ section h2 {
 }
 
 #about h2 {
-color: #f1f1f2;
+color: #4f4ff8;
 }
 
 #about p {
-color: #e6aa20;
+color: #0a0a09;
 }
 
 .container p {
@@ -137,7 +137,8 @@ color: #0d0c0d;
   left: 0;
   width: 99%;
   height: 100%;
-  background-image: url('https://wallpapercave.com/wp/wp2468651.jpg');
+
+  background-image: url(https://cdn.pixabay.com/photo/2016/11/15/18/32/peanuts-1827032_640.jpg);
   background-size: cover;
   background-position: center;
   filter: blur(5px); /* Adjust the blur radius as needed */
@@ -721,7 +722,7 @@ outline: none;
     height: auto;
     padding: 20px;
     text-align: center;
-    background-image: url('https://wallpapercave.com/wp/wp2468651.jpg');
+    background-image: url('https://cdn.pixabay.com/photo/2016/11/15/18/32/peanuts-1827032_640.jpg');
     background-size: cover;
     background-position: center;
   }
@@ -729,14 +730,14 @@ outline: none;
   #about h2 {
     font-size: 24px;
     margin-bottom: 20px;
-    color: #fff;
+    color: #0a0a0a;
   }
 
   #about p {
-    font-size: 16px;
+    font-size: 11px;
     line-height: 1.5;
     margin-bottom: 30px;
-    color: #fff;
+    color: #0e0d0d;
   }
 
   #about .button {
